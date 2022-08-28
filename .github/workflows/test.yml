@@ -1,4 +1,4 @@
-name: my first workflow number3 med fejl
+name: my first workflow with python
 
 on: [push]
 
@@ -13,3 +13,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
