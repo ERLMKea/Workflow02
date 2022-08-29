@@ -26,8 +26,10 @@ jobs:
         run: |
           Get-Location
           where java
+          java -version
       - name: Directory Bash
         run: |
           pwd
           which java
+          java -version
         shell: bash
